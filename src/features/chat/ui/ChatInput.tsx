@@ -1,13 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { useChatStore } from '../model/useChatStore';
 
 export const ChatInput = () => {
   const [input, setInput] = useState<string>('');
   const { addMessage } = useChatStore();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!input) return;
 
