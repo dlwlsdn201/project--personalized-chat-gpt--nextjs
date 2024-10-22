@@ -99,7 +99,7 @@ export const Sidebar = ({}): React.ReactElement => {
       {/* Bottom Add Button */}
       <div className="p-4">
         <button className="w-full py-2 flex items-center justify-center bg-yellow-400 text-black rounded-lg hover:bg-yellow-300">
-          <PlusCircledIcon className="w-6 h-6 mr-2" /> Add Contact
+          <PlusCircledIcon className="w-6 h-6 mr-2" /> New Chat
         </button>
       </div>
     </div>
