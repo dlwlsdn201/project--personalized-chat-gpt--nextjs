@@ -1,5 +1,5 @@
 import { GlobalStyle } from '@/shared/styles/GlobalStyle';
-import { Navigation } from '@shared/ui';
+import { Sidebar } from '@shared/ui';
 import { Theme } from '@radix-ui/themes';
 import '@shared/styles/globals.css';
 import '@radix-ui/themes/styles.css';
@@ -18,19 +18,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Theme>
-          <header style={{ width: '100%' }}>
-            <Navigation />
-          </header>
-          <aside></aside>
-          <div
-            id="container"
-            style={{
-              display: 'flex',
-              height: '100%',
-              flexFlow: 'column nowrap',
-            }}
-          >
+          {/* <header style={{ width: '100%' }}>
+          </header> */}
+          <div id="container" className="flex h-[100vh] w-[100%]">
             <GlobalStyle />
+            <aside>
+              <Sidebar />
+            </aside>
             {children}
           </div>
         </Theme>
